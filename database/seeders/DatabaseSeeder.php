@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             'jurusan' => 'Teknologi Informasi',
             'prodi' => 'Manajemen Informatika',
             'kelas' => 'MI2C',
-            'level' => 'Pemilih',
+            'level' => 'Administrator',
             'username' => 'muhammadabdiel',
             'password' => bcrypt('13122001'),
             'status' => 1
