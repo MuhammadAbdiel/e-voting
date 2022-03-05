@@ -8,6 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\VoteController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CalonController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 
 /*
@@ -21,11 +22,7 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', function () {
-    return view('index', [
-        'title' => 'Landing Page'
-    ]);
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/dashboard', function (Calon $calon, User $user) {
     return view('dashboard.index', [
