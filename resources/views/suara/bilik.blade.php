@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-@elseif (auth()->user()->status == 0 && auth()->user()->level == 'Administrator')
+@elseif (auth()->user()->status == 0 || auth()->user()->level == 'Administrator')
 <div class="row">
     <div class="col-lg-12">
         <div class="alert alert-warning alert-dismissible" role="alert">
@@ -37,7 +37,7 @@
         </div>
     </div>
 </div>
-@elseif (auth()->user()->status == 0 && auth()->user()->level == 'Petugas')
+@elseif (auth()->user()->status == 0 || auth()->user()->level == 'Petugas')
 <div class="row">
     <div class="col-lg-12">
         <div class="alert alert-warning alert-dismissible" role="alert">
