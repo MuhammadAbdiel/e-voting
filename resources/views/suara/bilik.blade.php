@@ -5,7 +5,7 @@
     <h1 class="h3 mb-0 text-gray-800">Bilik Suara</h1>
 </div>
 
-@if (auth()->user()->status == 0 && auth()->user()->level == 'Administrator')
+@if (auth()->user()->status == 0 && !(auth()->user()->level == 'Administrator') || (auth()->user()->level == 'Petugas'))
 @if (session()->has('success'))
 <div class="alert alert-success" role="alert">
     {{ session('success') }}
