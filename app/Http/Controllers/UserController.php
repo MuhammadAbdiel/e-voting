@@ -55,6 +55,12 @@ class UserController extends Controller
 
         $validatedData['password'] = Hash::make($validatedData['password']);
 
+        if ($validatedData['level'] == 'Pemilih') {
+            $validatedData['status'] = 1;
+        } else {
+            $validatedData['status'] = 0;
+        }
+
         User::create($validatedData);
         return redirect('/dashboard/user')->with('success', 'Pengguna baru telah ditambahkan');
     }
