@@ -4,21 +4,21 @@ https://simple-electronic-voting.herokuapp.com/
 
 ### Login Admin
 
-### `Username: muhammadabdiel`
+### `Username: admin`
 
-### `Password: 13122001`
+### `Password: admin`
 
 ### Login Petugas
 
-### `Username: uthukuthuk`
+### `Username: petugas`
 
-### `Password: password`
+### `Password: petugas`
 
 ### Login Pemilih
 
-### `Username: sukunahikona`
+### `Username: pemilih`
 
-### `Password: password`
+### `Password: pemilih`
 
 ## Usage
 
