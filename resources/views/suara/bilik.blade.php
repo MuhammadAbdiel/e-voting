@@ -59,9 +59,9 @@
                 <p class="text-center">{{ $loop->iteration }}</p>
 
                 @if ($calon->foto)
-                <img src="{{ asset('storage/' . $calon->foto) }}" width="280" alt="kandidat" class="mb-3">
+                <img src="{{ asset('storage/' . $calon->foto) }}" alt="kandidat" class="mb-3 img-fluid">
                 @else
-                <img src="/img/kandidat.jpg" width="280" alt="kandidat">
+                <img src="/img/kandidat.jpg" class="mb-3 img-fluid" alt="kandidat">
                 @endif
 
                 <h3 class="text-center mb-3">{{ $calon->nama_calon }}</h3>
