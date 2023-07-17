@@ -1,7 +1,5 @@
 ## Demo App
 
-https://simple-electronic-voting.herokuapp.com/
-
 ### Login Admin
 
 ### `Username: admin`
